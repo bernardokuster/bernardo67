@@ -1,1 +1,120 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
+body {
+    background-color: #0b0f19;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+    padding: 3rem 1rem;
+    text-align: center;
+    border-bottom: 3px solid #eab308;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #eab308;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #9ca3af;
+    margin-bottom: 1.5rem;
+}
+
+#searchBar {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: 2px solid #374151;
+    border-radius: 50px;
+    background-color: #111827;
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#searchBar:focus {
+    border-color: #eab308;
+    box-shadow: 0 0 10px rgba(234, 179, 8, 0.3);
+}
+
+/* Container Principal */
+.container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+/* Grid de Jogadores */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* Card do Jogador */
+.player-card {
+    background-color: #1f2937;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #2d3748;
+}
+
+.player-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(234, 179, 8, 0.15);
+    border-color: #eab308;
+}
+
+.player-info {
+    padding: 1.5rem;
+}
+
+.player-rank {
+    background-color: #eab308;
+    color: #0b0f19;
+    font-weight: bold;
+    padding: 0.2rem 0.6rem;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.player-info h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.player-info p {
+    color: #9ca3af;
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+}
+
+.player-info p strong {
+    color: #e5e7eb;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #111827;
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-top: 4rem;
+}
